@@ -8,10 +8,10 @@ public class SelectionSort {
 	}
 	public static void selectionSort (int[] num){
 		int i,j,temp,index;
-		for(i=0;i<num.length;i++) {
+		for(i=0;i<num.length-1;i++) {
 			index=i;
 			for(j=i+1;j<num.length;j++) {
-				if(num[j]<num[i]){
+				if(num[j]<num[index]){
 					index = j;
 				}
 					temp = num[index];
