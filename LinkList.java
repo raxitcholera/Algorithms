@@ -30,4 +30,8 @@ public class LinkList {
 		this.head = newNode; 
 	}
 
+	public void deleteAtHead(){
+		this.head = this.head.getNextNode();
+	}
+
 }

@@ -14,5 +14,11 @@ public class LinkListDemo {
 		System.out.println(list);
 		System.out.println("Size :- " + list.sizeofList());
 
+		list.deleteAtHead();
+		
+		System.out.println(list);
+		System.out.println("Size :- " + list.sizeofList());
+
+
 	}
 }
