@@ -14,6 +14,16 @@ public class LinkList {
 		return result;
 	}
 
+	public int sizeofList(){
+		int count=0;
+		Node current = this.head;
+		while (current!=null){
+			count++;
+			current = current.getNextNode();
+		}
+		return count;
+
+	}
 	public void insertAtHead(int data) {
 		Node newNode = new Node(data);
 		newNode.setNextNode(this.head);

@@ -12,6 +12,7 @@ public class LinkListDemo {
 		list.insertAtHead(1);
 
 		System.out.println(list);
+		System.out.println("Size :- " + list.sizeofList());
 
 	}
 }
