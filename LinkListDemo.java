@@ -19,6 +19,8 @@ public class LinkListDemo {
 		System.out.println(list);
 		System.out.println("Size :- " + list.sizeofList());
 
+		System.out.println("trying to find 12 "+list.find(12));
+		System.out.println("trying to find 20 "+list.find(20));
 
 	}
 }

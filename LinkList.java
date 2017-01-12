@@ -24,6 +24,19 @@ public class LinkList {
 		return count;
 
 	}
+
+	public Node find(int data){
+		int index = 0;
+		Node current = this.head;
+		while(current!=null) {
+			if(current.getData() == data){
+				return current;
+			}
+			current = current.getNextNode();
+		}
+		return null;
+	}
+
 	public void insertAtHead(int data) {
 		Node newNode = new Node(data);
 		newNode.setNextNode(this.head);
