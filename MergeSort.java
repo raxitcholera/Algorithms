@@ -35,15 +35,6 @@ public class MergeSort {
 				j++;
 			}
 		}
-
-
-		// System.out.print("\n start "+ start + " end "+ end);
-		// int temp;
-		// if(num[start]>num[end]) {
-		// 	temp = num[start];
-		// 	num[start]=num[end];
-		// 	num[end]=temp;
-		// }
 	}
 	public static void printAll(int[] num) {
 		for(int i = 0; i < num.length; i++){

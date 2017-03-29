@@ -2,7 +2,7 @@ public class TowerOfHanoi {
 
 	public static void main(String[] args){
 	TowerOfHanoi toh = new TowerOfHanoi();
-	toh.move(4,'a','b','c');
+	toh.move(5,'a','b','c');
 	}
 	public void move (int num, char from, char to, char using){
 		if(num == 1)  {
