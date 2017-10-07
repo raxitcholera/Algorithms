@@ -3,7 +3,8 @@ public class BubbleSort {
 	public static void main(String[] args){
         int[] num = {5, 8, 24, 15, 200, 192, 86, 35, 78, 4 ,9, 20};
         printAll(num);
-        recursiveBubbleSort(num,12,0);
+        // recursiveBubbleSort(num,12,0);
+        taileredbubbleSort(num,5);
         //bubbleSort(num);
         printAll(num);
 	}
@@ -17,8 +18,21 @@ public class BubbleSort {
 					num[j+1] = temp;
 				}
 			}
+
 		}
 	}
+    public static void taileredbubbleSort (int[] num,int k){
+        int i,j,temp;
+        for(i=0;i<k;i++) {
+            for(j=num.length-1;j>0;j--) {
+                if(num[j]<num[j-1]){
+                    temp = num[j];
+                    num[j] = num[j-1];
+                    num[j-1] = temp;
+                }
+            }
+        }
+    }
 	public static int[] recursiveBubbleSort(int[] list, int n,int start) {
         if (start == n) {
             return list; //finished sorting
